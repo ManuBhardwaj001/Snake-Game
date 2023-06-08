@@ -19,8 +19,8 @@ highScoreElement.innerText = `High Score: ${highScore}`;
 //Passing a random value betweeen 1 and 30 as food position
 
 const updateFoodPosition = () => {
-    foodX = Math.floor(Math.random() * 30) + 1;
-    foodY = Math.floor(Math.random() * 30) + 1;
+    foodX = Math.floor(Math.random() * 40) + 1;
+    foodY = Math.floor(Math.random() * 40) + 1;
 }
 
 const handleGameOver = () => {
@@ -81,7 +81,7 @@ const initGame = () => {
 
     //Check whether snake body is out of wall or not
 
-    if (snakeX <= 0 || snakeX > 30 || snakeY <= 0 || snakeY > 30) {
+    if (snakeX <= 0 || snakeX > 40 || snakeY <= 0 || snakeY > 40) {
         return gameOver = true;
     }
 
